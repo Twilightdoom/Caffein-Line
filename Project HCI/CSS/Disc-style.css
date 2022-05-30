@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#header{
+    background-color: #E5E5E5;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    height: 60px;
+    
+    /* width: 1490px; */
+    padding: 0 1%;
+    /* position:fixed; */
+  }
+
+#logo{
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+#logo img{
+    height: 55px;
+    padding-left: 20px;
+}
+
+.nav_links{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    padding-right: 850px;
+}
+
+.nav_links ul{
+    display: flex;
+    list-style: none;
+    color: #fff;
+    /* justify-content: center; */
+}
+
+.nav_links ul li{
+   height: 70px;
+    padding: 14px 20px;
+    justify-content: center;
+    /* margin-left: 200px; */
+}
+
+
+
+.sub-menu{
+    display:none;
+}
+.sub-menu ul{
+    padding-top: 10px;
+    display: flex;
+}
+
+.nav_links ul li a{
+    transition: all 0.3s ease 0s;
+    color: black;
+    text-decoration: none;
+}
+.nav_links ul  :hover{
+    color: white;
+}
+.nav_links ul :hover .sub-menu{
+    
+    display: block;
+    background:#E5E5E5; 
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.nav_links ul :hover .sub-menu ul{
+    display: block;
+    margin: 20px;
+}
+
+.nav_links ul :hover .sub-menu ul li{
+    width: 100px;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.nav_links ul :hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+    
+
+
+#navbar2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+#motor img{
+    height: 70px;
+}
+
+#motor{
+    padding-top: 10px;
+}
+
+
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgb(201, 3, 3); 
+}
+
+/* content */
+
+.section{
+    
+    background-image: url("../Asset_Coffee/background2-min.png");
+    background-color: #cccccc;
+    text-align: center;
+    height: 2160px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center{
+    position: relative;
+    top: 8%;
+    left: 50%;
+    padding-left: 75px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.center img{
+    height: 200px;
+}
+
+.canvas{
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 70%;
+    margin: auto;
+}
+
+.disc-prod{
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(236, 200, 169, 0.5);
+    padding: 20px 20px 30px;
+    transition: 300ms;
+}
+
+.disc-prod:hover{
+    box-shadow: 2px 2px 5px black;
+    background-color: rgba(236, 200, 169, 0.795);
+    transform: scale(1.1);
+}
+
+.deal{
+    color: rgb(255, 0, 0);
+    font-weight: 1000;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.disc-prod img{
+    width: 300px;
+    height: 380px;
+}
+
+.product-name{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.prod-button{
+    border: none;
+    background-color: rgb(165, 108, 62);
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+.prod-button:hover{
+    background-color: #ffd6b6;
+    color: rgb(119, 54, 0);
+    box-shadow: 2px 2px 5px #a78372;
+    cursor: pointer;
+}
+
+/* footer */
+
+#sosmed img{
+    height: 20px;
+}
+
+#sosmed{
+    display: flex;
+    justify-content: center;
+}
+
+.sosmed-imager{
+    padding-right: 5px;
+}
+
+.sosmed-imager2{
+    padding-left: 8px;
+}
+
+#footer{
+    text-align: center;
+    background-color: #E5E5E5;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar{
+        height: 12vw;
+      }
+    #logo img{
+        
+        margin-left: -20px;
+        padding-right: 30px;
+        /* transform: translate(-535%, 0%); */
+        height: 50px;
+    }
+    /* #navbar{
+        height: 25px;
+    } */
+
+    .nav_links{
+        height: auto;
+        padding-right: -250px;
+        margin: auto;
+        
+        
+    }
+    .nav_links ul li{
+        font-size: 10px;
+        padding-left: 20px;
+    }
+    
+    #navbar2{
+        transform: translate(-335%, 0%);
+    }
+
+   
+
+}

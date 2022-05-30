@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="../CSS/purchase.css">
+    <script src="../Javascript/Purchase.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <a href="Home.html">
+                <img src="../Logo/Caffein Line.png" alt="">
+            </a>
+            
+        </div>
+
+        
+
+        <nav>
+            <div class="nav_links">
+                <ul>
+                    <li>
+                        <a href="#">
+                            BEVERAGES
+                            <div class="sub-menu">
+                                <ul>
+                                    <li> <a href="../HTML/Coffee.html">Coffee</a></li>
+                                    <li> <a href="../HTML/Tea.html">Tea</a></li>
+                                </ul> 
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            DESSERTS
+                            <div class="sub-menu">
+                                <ul>
+                                    <li> <a href="../HTML/Croissant.html">Croissant</a></li>
+                                    <li> <a href="../HTML/Pudding.html">Pudding</a></li>
+                                </ul> 
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/Contact.html">
+                            CONTACT US
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="navbar2">
+            <div id="motor">
+                <img src="../Asset/man-is-riding-scooter-delivery-logo_224764-641-removebg-preview.png" alt="">
+            </div>
+
+
+            <a class= "CoC" href="Purchase.html">
+                <button>
+                    PAYMENT
+                </button>
+            </a>
+        </div>
+
+    </div>
+    <div id ="box">
+    <div class="content">
+        <form action="" id="payment">
+            <h1 id="title">Payment</h1>
+            
+            <table >
+                <tr>
+                    <td>Name</td>
+                    <td>:</td>
+                    <td><input type="text" class="line" name="name" id="name" placeholder="ex: Adriel Jonathan" ></td>
+                </tr>
+                    <td></td>
+                    <td><div id="nameErr" class="error"></div></td>  
+                    <td></td> 
+                    
+                    
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="text" class="line" name="email" id="email" placeholder="ex: adriel@gmail.com"></td>
+                    
+                </tr>
+
+
+                <td></td>
+                <td><div id="emailErr" class="error"></div></td>
+                <td></td>
+
+
+                <tr>
+                    <td>City</td>
+                    <td>:</td>
+                    <td><input type="text" class="line"name="city" id="city" placeholder="ex: Tangerang Kota"></td>
+                    
+                </tr>
+
+
+                <td></td>
+                <td><div id="cityErr" class="error"></div></td>
+                <tr>
+                    <td>Address</td>
+                    <td>:</td>
+                    <td><textarea name="address" id="address" cols="20" rows="5" placeholder="jln lempuyang 1 nomor 3"></textarea></td>
+                </tr>
+                <td></td>
+                <td><div id="addrErr" class="error"></div></td>
+                <td></td>
+                
+                <tr>
+                    <td>Payment Method</td>
+                    <td>:</td>
+                    <td><div id="radio">
+                        <input type="radio" name="form_method" value = "visa" id="form_method_visa"> Visa
+                        <input type="radio" name="form_method" value = "paypal" id="form_method_paypal"> Paypal
+                    </div>
+                        <td><div id="radioErr" class="error"></div></td>
+                        <tr>
+                            <td class="small visa">Card Number</td>
+                            <td><input type="text" name="cardNum" id="cardNum" class="line visa"placeholder="+1 303-967-1096"></td>
+                        </tr>
+                        <td></td>
+                        <td><div id="cardErr" class="error"></div></td>
+                        <tr>
+                            <td class="small visa">Validity (MM/YY)</td>
+                            <td><input type="text" name="validity" id="validity" class="line visa" placeholder="06/21" ></td>
+                        </tr>
+                        <td></td>
+                        <td><div id="validityErr" class="error"></div></td>
+                        <tr>
+                            <td class="small visa">CVV</td>
+                            <td><input type="text" name="cvv" id="cvv" class="line visa" placeholder="987"></td>
+                        </tr>
+                        <td></td>
+                        <td><div id="cvvErr" class="error"></div></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="agree" colspan="2">
+                        <input type="checkbox" name="for-agree" id="for-agree"> I agree with the terms and conditions
+                    </td>
+                </tr>
+                <td></td>
+                <td><div id="agreeErr" class="error"></div></td>
+            </table>
+            <div id="btn-input">
+                <input type="button" class="submit" onclick="Validateall()"value="Submit">
+                
+            </div>
+            
+        </form>
+    </div>  
+</div>
+    
+    <div id="footer">
+
+        <div id="sosmed">
+            <a href="https://www.facebook.com/" target="_blank">
+                <div class="sosmed-imager">
+                    <img src="../Asset/iconmonstr-facebook-1-240.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <div class="sosmed-imager1">
+                    <img src="../Asset/iconmonstr-instagram-11-240.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.youtube.com/results?search_query=caffein+line" target="_blank">
+                <div class="sosmed-imager2">
+                    <img src="../Asset/iconmonstr-youtube-6-240.png" alt="">
+                </div>
+            </a>
+            
+        </div>
+        <p id="copy"> 
+            <h6>&copy;Coffee Line Company. All rights reserved.</h6>
+        </p>
+        <p id="Term">
+            <h6>Terms of Use | Privacy Policy</h6>
+        </p>
+    </div>
+
+</body>
+</html>
